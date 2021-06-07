@@ -14,4 +14,4 @@ const userValidate = (req, res, netx) => {
 
 
 
-module.exports = userValidate
+module.exports = { userValidate }

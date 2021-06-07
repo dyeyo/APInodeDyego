@@ -36,4 +36,4 @@ const JWTValidate = async (req, res, netx) => {
     netx();
 }
 
-module.exports = JWTValidate
+module.exports = { JWTValidate }

@@ -1,10 +1,15 @@
 const { Router } = require('express')
 const { check } = require('express-validator')
 const { getUser, create, update, destroy } = require('../controller/user')
-const userValidate = require('../middleware/userValidate')
 const { rolValidate, emailExist, idUserExist } = require('../helpers/db-validators')
-const JWTValidate = require('../middleware/JWTValidate')
-const { isADMIN } = require('../middleware/roleValidate')
+// const userValidate = require('../middleware/userValidate')
+// const JWTValidate = require('../middleware/JWTValidate')
+// const isADMIN = require('../middleware/roleValidate')
+const {
+    userValidate,
+    JWTValidate,
+    isADMIN
+} = require('../middleware');
 
 const router = Router()
 
